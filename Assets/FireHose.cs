@@ -13,5 +13,6 @@ public class FireHose : MonoBehaviour {
 		Cursor.SetCursor (m_fireHoseCursor, m_hotSpot, m_cursorMode);
 		enabled = true;
 		Tack.enabled = false;
+		Debug.Log ("Mouse Cursor Picked Up");
 	}
 }
