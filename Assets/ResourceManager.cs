@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class ResourceManager : MonoBehaviour {
@@ -10,13 +11,32 @@ public class ResourceManager : MonoBehaviour {
 	public GameObject m_tackSpawnLocation;
 	public GameObject m_tackParent;
 
+	public Text m_cashText;
+
+	public int cash;
+
 	void Start () {
 		instance = this;
+		cash = 0;
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 	
+	}
+
+	public static void AddCash(){
+		instance.cash += 100000;
+		instance.m_cashText.text = "" + instance.cash;
+	}
+
+	public static void GameOver(){
+		int prevHighScore = PlayerPrefs.GetInt ("High Score", 0);
+		if (instance.cash < prevHighScore) {
+			PlayerPrefs.SetInt ("High Score", instance.cash);
+		}
+
+		PlayerPrefs.SetInt ("Your Score", instance.cash);
 	}
 
 	public static void AddUranium(){

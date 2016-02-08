@@ -8,31 +8,32 @@ public class Country : MonoBehaviour {
 	public CursorMode m_cursorMode = CursorMode.Auto;
 	public Vector2 m_hotSpot = Vector2.zero;
 
-	public Country [] neighbors;
 	// Use this for initialization
 	void Start () {
 		m_nNukes = 1;
 		StartCoroutine (AddNukes());
 	}
 
-	private void KillYourNeighbor(Country neighbor){
+	private void KillYourNeighbor(GameObject neighbor){
 		//TODO: game over
 
 		Debug.Log ("GameOver");
+		ResourceManager.GameOver ();
 	}
 
 	private IEnumerator AddNukes(){
 		//TODO: replace with a more sensible algorithm
 		while (true) {
 			int cycles = Random.Range (5, 100);
-			float proliferationRate = Random.Range (5.0f, 15.0f);
+			float proliferationRate = Random.Range (2.0f, 15.0f);
 			for (int i = 0; i < cycles; i++) {
 				m_nNukes++;
 				m_nukeText.text = "" + m_nNukes;
 
+				GameObject [] neighbors = GameObject.FindGameObjectsWithTag("Country");
 				//Check to see if we have 50% more nukes than our neighbors
-				foreach (Country neighbor in neighbors) {
-					if (neighbor.m_nNukes * 1.5f < m_nNukes + 10) {
+				foreach (GameObject neighbor in neighbors) {
+					if (neighbor.GetComponent<Country>().m_nNukes + 5 < m_nNukes) {
 						KillYourNeighbor (neighbor);
 					}
 				}
@@ -48,7 +49,7 @@ public class Country : MonoBehaviour {
 
 			m_nNukes++;
 			m_nukeText.text = "" + m_nNukes;
-
+			ResourceManager.AddCash ();
 
 			Cursor.SetCursor (null, m_hotSpot, m_cursorMode);
 		}
