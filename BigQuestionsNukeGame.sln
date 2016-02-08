@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{B7A67942-4DAE-E485-E97C-35A1F5137A45}") = "BigQuestionsNukeGame", "Assembly-CSharp-firstpass.csproj", "{02382F3B-E6C8-7579-8320-964322EA8B6D}"
+EndProject
+Project("{B7A67942-4DAE-E485-E97C-35A1F5137A45}") = "BigQuestionsNukeGame", "Assembly-CSharp.csproj", "{E106D3A1-BAD7-C324-B4EA-AB1437A4A7C1}"
+EndProject
+Project("{B7A67942-4DAE-E485-E97C-35A1F5137A45}") = "BigQuestionsNukeGame", "Assembly-CSharp-Editor.csproj", "{E1D1D060-94AB-4E12-7851-012FD614CAD7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02382F3B-E6C8-7579-8320-964322EA8B6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02382F3B-E6C8-7579-8320-964322EA8B6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02382F3B-E6C8-7579-8320-964322EA8B6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02382F3B-E6C8-7579-8320-964322EA8B6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E106D3A1-BAD7-C324-B4EA-AB1437A4A7C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E106D3A1-BAD7-C324-B4EA-AB1437A4A7C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E106D3A1-BAD7-C324-B4EA-AB1437A4A7C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E106D3A1-BAD7-C324-B4EA-AB1437A4A7C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1D1D060-94AB-4E12-7851-012FD614CAD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1D1D060-94AB-4E12-7851-012FD614CAD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1D1D060-94AB-4E12-7851-012FD614CAD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1D1D060-94AB-4E12-7851-012FD614CAD7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
