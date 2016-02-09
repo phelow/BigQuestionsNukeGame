@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E106D3A1-BAD7-C324-B4EA-AB1437A4A7C1}</ProjectGuid>
+    <ProjectGuid>{73F0A80A-F32F-90AF-63DF-FB116591A909}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -51,7 +51,10 @@
      <Compile Include="Assets\FireHose.cs" />
      <Compile Include="Assets\Refinery.cs" />
      <Compile Include="Assets\ResourceManager.cs" />
+     <Compile Include="Assets\Rocket.cs" />
+     <Compile Include="Assets\RocketLauncher.cs" />
      <Compile Include="Assets\Tack.cs" />
+     <Compile Include="Assets\Truck.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
@@ -159,7 +162,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{02382F3B-E6C8-7579-8320-964322EA8B6D}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{834F1DB5-9944-5622-156A-7FA27D154659}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
